@@ -1,0 +1,79 @@
+*, *:before, *:after { box-sizing: border-box; }
+
+html, body, .row, .main .size1of2 { height: 100% }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+h1 { font-size: 8em; margin-top: 0; margin-bottom: 0 }
+h3 { font-size: 1.5em; letter-spacing: 0.05rem }
+
+.row { font-size: 0 }
+
+.size1of1 {
+  width: 100%;
+  font-size: initial;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.size1of2 {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  font-size: initial;
+  text-align: center;
+}
+
+.main .size1of2:first-of-type { background-color: #22a301; color: #fff; }
+.main .size1of2:last-of-type { background-color: #fff }
+
+.main-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.main-content-header {
+  display: inline-block;
+  border: 2px solid #22a301;
+  color: #22a301;
+  padding: 15px;
+  font-size: 8em;
+  border-radius: 50%;
+}
+
+.main-content-header span {
+  display: inline-block;
+  line-height: 160px;
+}
+
+.main-content input, .main-content button {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0
+}
+
+.main-content input {
+  outline: 0;
+  border: 2px solid #ccc;
+  padding: 5px 10px;
+  font-size: 1.75rem;
+  border-radius: 5px 0 0 5px;
+}
+
+.main-content button {
+  border: none;
+  background: #ccc;
+  color: #fff;
+  font-size: 1.5rem;
+  height: 47px;
+  padding: 5px 10px;
+}
